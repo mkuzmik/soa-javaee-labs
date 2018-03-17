@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form id="loginForm" method="post" action="/lab2/ex5">
+        Login: <input name="login" type="text" id="login"/><span id="loginMessage"></span><br>
+        Pass: <input name="password" type="text" id="password"/><span id="passwordMessage"></span><br>
+        <input type="button" name="loginBtn" value="Sign in" onclick="validateAndLogin()">
+    </form>
+</body>
+<script>
+    function validateAndLogin() {
+        var loginField = document.getElementById("login");
+        var passField = document.getElementById("password");
+
+        var loginMessage = document.getElementById("loginMessage");
+        var passMessage = document.getElementById("passwordMessage");
+
+        loginMessage.innerText = "";
+        passMessage.innerText = "";
+
+        if (loginField.value.length === 0)
+            loginMessage.innerText = "Login cannot be empty";
+        else if (passField.value.length === 0)
+            passMessage.innerText = "Password cannot be empty";
+        else {
+            document.getElementById("loginForm").submit();
+        }
+    }
+</script>
+</html>
