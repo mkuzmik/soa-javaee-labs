@@ -16,7 +16,7 @@ public class Book {
 
   @Id
   @GeneratedValue
-  private long id;
+  private int id;
 
   private String title;
 

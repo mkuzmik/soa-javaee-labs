@@ -1,6 +1,7 @@
 package soa.hibernate.library.borrowing;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import soa.hibernate.library.client.Client;
 import soa.hibernate.library.book.Book;
 
@@ -12,6 +13,7 @@ import java.sql.Date;
 
 @Entity
 @Data
+@NoArgsConstructor
 public class Borrowing {
 
   @Id
@@ -27,4 +29,11 @@ public class Borrowing {
   private Date borrowingDate;
 
   private Date returningDate;
+
+  public Borrowing(Client client, Book book, Date borrowingDate, Date returningDate) {
+    this.client = client;
+    this.book = book;
+    this.borrowingDate = borrowingDate;
+    this.returningDate = returningDate;
+  }
 }
