@@ -1,6 +1,8 @@
-package library;
+package soa.hibernate.library.client;
 
 import lombok.Data;
+import soa.hibernate.library.PersonalData;
+import soa.hibernate.library.borrowing.Borrowing;
 
 import javax.persistence.*;
 import java.util.Collection;

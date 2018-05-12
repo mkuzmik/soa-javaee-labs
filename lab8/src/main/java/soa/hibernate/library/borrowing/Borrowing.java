@@ -1,6 +1,8 @@
-package library;
+package soa.hibernate.library.borrowing;
 
 import lombok.Data;
+import soa.hibernate.library.client.Client;
+import soa.hibernate.library.book.Book;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

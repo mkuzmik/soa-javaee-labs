@@ -1,4 +1,4 @@
-package library;
+package soa.hibernate.library;
 
 import lombok.Data;
 
