@@ -45,6 +45,9 @@
                                 <wsdlOption>
                                     <wsdl>http://localhost:8080/service/HelloWorldService?wsdl</wsdl>
                                 </wsdlOption>
+                                <wsdlOption>
+                                    <wsdl>http://localhost:8080/service/CurrencyService?wsdl</wsdl>
+                                </wsdlOption>
                             </wsdlOptions>
                         </configuration>
                         <goals>
